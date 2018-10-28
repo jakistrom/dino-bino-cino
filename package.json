@@ -1,7 +1,7 @@
 {
-  "name": "test",
+  "name": "dino-bino-cino",
   "version": "1.0.0",
-  "description": "> Instalacja i uruchomienie Gulpa może przysporzyć na początku trochę problemów. > Pamiętaj, że im więcej problemów teraz napotkasz tym później będzie łatwiej. Naucz się czytać > informację wyrzucane przez konsolę.",
+  "description": "homeork",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +16,8 @@
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.4.1",
     "gulp-util": "^3.0.8"
+  },
+  "dependencies": {
+    "gulp-update": "0.0.2"
   }
 }

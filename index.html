@@ -1,21 +1,53 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sass - Zadania</title>
-
-    <link rel="stylesheet" href="/css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#4a392d">
+  <title>dino bino cino</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/slick.css">
+  <link rel="stylesheet" href="/css/slick-theme.css">
 </head>
 <body>
 
-    <div class="container">
-      <div class="sidebar">
-        <h1>Main header</h1>
-      </div>
-      <section>
-        <h1>Main section</h1>
-      </section>
-    </div>
+  <header id="wrapper">
+    
+  </header>
 
+  <div class="thing" id="wrapper">
+    <div>
+      <picture>
+        <source srcset="assets/desktop/background_1.png" media="(min-width: 1400px)"/>
+        <img src="assets/mobile/background_1.jpg" alt="">
+      </picture>
+    </div>
+    <div>
+      <picture>
+        <source srcset="assets/desktop/background_2.png" media="(min-width: 1400px)"/>
+        <img src="assets/mobile/background_2.jpg" alt="">
+       </picture>
+    </div>
+    <div>
+        <picture>
+          <source srcset="assets/desktop/background_3.png" media="(min-width: 1400px)"/>
+          <img src="assets/mobile/background_3.png" alt="">
+         </picture>
+      </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" type="text/javascript"></script>
+  <script src="js/slick.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.thing').slick({
+        dots: true,
+        arrows: true,
+        autoplay: false
+       
+      })
+    })
+  </script>
 </body>
 </html>
