@@ -1,0 +1,7 @@
+body {
+  background-color: yellow; }
+  @media (min-width: 420px) {
+    body {
+      background-color: grey; } }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5jc3MiLCJzb3VyY2VzIjpbIm1haW4uc2NzcyJdLCJzb3VyY2VzQ29udGVudCI6WyJib2R5e1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB5ZWxsb3c7XG4gIEBtZWRpYSAobWluLXdpZHRoOiA0MjBweCl7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogZ3JleTtcbiAgfVxufVxuXG5cblxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLEFBQUEsSUFBSSxDQUFBO0VBQ0YsZ0JBQWdCLEVBQUUsTUFBTSxHQUl6QjtFQUhDLE1BQU0sRUFBRSxTQUFTLEVBQUUsS0FBSztJQUYxQixBQUFBLElBQUksQ0FBQTtNQUdBLGdCQUFnQixFQUFFLElBQUksR0FFekIifQ== */
