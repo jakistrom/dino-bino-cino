@@ -12,11 +12,15 @@ body{
     position: fixed;
   }
   .slider{
-    .slider-content{
-      
-
+    height: 100%;
+    .slider-slick{
+      position: relative;
+        .slider-content{
+          position: absolute;
+     
+        }
       img{
-       
+        height: 100%;
         
         margin: 0 auto;
       }
