@@ -1,8 +1,12 @@
 $(document).ready(function(){
-    $('.slider-slick').slick({
-      dots: true,
-      arrows: true,
-      autoplay: false,
-     
+    $('.slider').slick({
+        dots: true,
+        infinite: true,
+        
+        slidesToShow: 1,
+        speed: 500,
+        
     })
   })
+
+ 
