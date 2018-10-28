@@ -1,41 +1,27 @@
 @import 'reset';
 
 body{
-  
-}
-#wrapper{
-  width: 1170px;
-  margin: 0 auto;
-}
+  .navbar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 100;
+    position: fixed;
+  }
+  .slider{
+    .slider-content{
+      
 
-img{
-  width: 100%;
-}
+      img{
+       
+        
+        margin: 0 auto;
+      }
+    }
+  }
 
-.logo{
-  width: 20%;
-  float: left;
-}
-
-.menu-item{
-  width: 75%;
-}
-
-.menu-item ul{
-  float: right;
-  list-style: none;
-}
-
-.menu-area{
-  overflow: hidden;
-}
-
-.menu-area ul li{
-  display: inline-block;
-}
-
-.menu-area ul li a{
-  display: inline-block;
-  padding: 10px 15px;
-  text-transform: uppercase;
+height: 1500px;
 }
