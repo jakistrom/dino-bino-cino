@@ -394,6 +394,7 @@
 
     };
 
+
     Slick.prototype.autoPlayClear = function() {
 
         var _ = this;

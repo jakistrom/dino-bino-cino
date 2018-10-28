@@ -123,26 +123,20 @@
 {
     position: absolute;
     bottom: 62px;
-
     display: block;
-
     width: 100%;
     padding: 0;
     margin: 0;
-
     list-style: none;
-
     text-align: center;
 }
 .slick-dots li
 {
     position: relative;
-
     display: inline-block;
-
     width: 20px;
     height: 20px;
-    margin: 0 13px;
+    margin: 0 14px;
     padding: 0;
 
     cursor: pointer;
