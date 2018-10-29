@@ -9,10 +9,10 @@ $(document).ready(function(){
    
     $('.hamburger--stand').click(function() {
         $('.hamburger--stand').toggleClass('is-active');
-        $('.mobile-navigation').slideToggle('down'); 
-        $('body').toggleClass('hidden');   
+        $('.mobile-navigation').slideToggle('down');
+        $('body').toggleClass('hidden');
+        $('.mobile-navigation', 'ul').css({"border-left": "40px solid black"})
     });
-       
 
     $('.slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
         if(currentSlide == 0){

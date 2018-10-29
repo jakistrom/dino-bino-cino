@@ -22,8 +22,7 @@
   margin: 0;
   overflow: visible;
   display: flex;
-}
-
+  }
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after {
@@ -43,7 +42,7 @@
     background-color: #f4f5f9;
     position: absolute;
     transition-property: transform;
-    transition-duration: 0.15s;
+    transition-duration: 0.25s;
     transition-timing-function: ease; }
   .hamburger-inner::before, .hamburger-inner::after {
     content: "";
@@ -583,6 +582,7 @@
    * Stand
    */
 .hamburger--stand .hamburger-inner {
+  
   transition: transform 0.075s 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19), background-color 0s 0.075s linear; }
   .hamburger--stand .hamburger-inner::before {
     transition: top 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
