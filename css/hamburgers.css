@@ -23,6 +23,15 @@
   overflow: visible;
   display: flex;
   }
+  @media only screen and (min-width: 769px) {
+
+  
+      .hamburger{
+        display: none;
+      }
+   
+    }
+  
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after {
