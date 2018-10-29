@@ -1,4 +1,6 @@
+
 $(document).ready(function(){
+    
     $('.slider').slick({
         dots: true,
         infinite: true,      
@@ -7,6 +9,8 @@ $(document).ready(function(){
    
     $('.hamburger--stand').click(function() {
         $('.hamburger--stand').toggleClass('is-active');
+        $('.mobile-navigation').slideToggle('down'); 
+        $('body').toggleClass('hidden');   
     });
        
 
@@ -31,11 +35,13 @@ $(document).ready(function(){
           if (ScrollY > NavY) 
           { 
               $('.navbar').css('background', 'rgba(0, 0, 0, 0.6)');
+              $('.mobile-navigation').css('top', '0');
           }
             
           else
           {
               $('.navbar').css('background', 'none'); 
+              $('.mobile-navigation').css('top', '-20px');
           }
       };
 

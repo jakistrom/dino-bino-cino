@@ -7,8 +7,9 @@
  */
 .hamburger {
   position: absolute;
-  top: 21px;
-  right: 25px;
+  height: 38px;
+  top: 1px;
+  right: 24px;
   cursor: pointer;
   transition-property: opacity, filter;
   transition-duration: 0.15s;
@@ -19,19 +20,17 @@
   background-color: transparent;
   border: 0;
   margin: 0;
-  overflow: visible; }
-  .hamburger:hover {
-    }
-  .hamburger.is-active:hover {
-    }
+  overflow: visible;
+  display: flex;
+}
+
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after {
-    background-color: #f4f5f9; }
+    background-color: #000; }
 
 .hamburger-box {
   width: 31px;
-  height: 25px;
   display: inline-block;
   position: relative; }
 
