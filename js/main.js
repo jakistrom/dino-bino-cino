@@ -5,17 +5,19 @@ $(document).ready(function(){
         slidesToShow: 1       
     });
    
+    $('.hamburger--stand').click(function() {
+        $('.hamburger--stand').toggleClass('is-active');
+    });
+       
+
     $('.slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
         if(currentSlide == 0){
-            $( '.firstLetter' ).text('d')
             $( '#B' ).text('D')
         }
         else if(currentSlide == 1){
-            $( '.firstLetter' ).text('b')
             $( '#B' ).text('B')
         }
         else{
-            $( '.firstLetter' ).text('c')
             $( '#B' ).text('C')
         }
     });
