@@ -35,7 +35,7 @@ max-width: 100vw;
     display: none;
     background: rgba(255, 255, 255, 1);
     animation-name: clicked;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     
     @keyframes clicked {
       0% { background-color: rgba(63, 62, 64, 0.9); } 
@@ -216,7 +216,7 @@ max-width: 100vw;
           letter-spacing: 0.12px;
           cursor: pointer;
         }
-        .slide-button:active{
+        .slide-button:focus{
           background-color: #e74c3c;
           height: 56px;
           width: 225px;
