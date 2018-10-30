@@ -37,7 +37,7 @@ $(document).ready(function(){
           { 
               $('.navbar').css('background', 'rgba(0, 0, 0, 0.6)');
               $('.mobile-navigation').css('top', '0');
-          }
+           }
             
           else
           {

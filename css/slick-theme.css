@@ -8,7 +8,7 @@
 /* Icons */
 @font-face
 {
-    font-family: 'slick';
+    
     font-weight: normal;
     font-style: normal;
 
@@ -21,21 +21,16 @@
 {
     font-size: 0;
     line-height: 0;
-
     position: absolute;
     top: 50%;
-
     display: block;
-
     width: 20px;
     height: 20px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
-
     cursor: pointer;
-
     color: transparent;
     border: none;
     outline: none;
@@ -66,20 +61,21 @@
 .slick-prev:before,
 .slick-next:before
 {
-    font-family: 'slick';
+    font-family: slick;
     font-size: 20px;
     line-height: 1;
-
     opacity: .75;
     color: white;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-prev
 {
-    left: -25px;
+    left: 40px;
+    z-index: -1;
+}
+
 }
 [dir='rtl'] .slick-prev
 {
@@ -97,7 +93,8 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 40px;
+    z-index: -1;
 }
 [dir='rtl'] .slick-next
 {
@@ -106,12 +103,19 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: '';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: '';
 }
+
+
+@media only screen and (min-width: 769px) {
+    .slick-prev, .slick-next{
+      z-index: 5;
+    }
+  }
 
 /* Dots */
 .slick-dotted.slick-slider
@@ -130,6 +134,8 @@
     list-style: none;
     text-align: center;
 }
+
+
 .slick-dots li
 {
     position: relative;
@@ -138,22 +144,17 @@
     height: 20px;
     margin: 0 14px;
     padding: 0;
-
     cursor: pointer;
 }
 .slick-dots li button
 {
     font-size: 0;
     line-height: 0;
-
     display: block;
-
     width: 20px;
     height: 20px;
     padding: 5px;
-
     cursor: pointer;
-
     color: transparent;
     border: 0;
     outline: none;
@@ -171,7 +172,7 @@
 }
 .slick-dots li button:before
 {
-    font-family: 'slick';
+    
     
     position: absolute;
     top: 0;
@@ -197,3 +198,5 @@
 {
     background: #adadad;
     
+}
+
