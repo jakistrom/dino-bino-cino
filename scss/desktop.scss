@@ -7,6 +7,17 @@
         display: block;
     }
     body{
+        .slider-blade{
+            -webkit-clip-path: polygon(50% 59%, 100% 0, 100% 32%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 0 0);
+            clip-path: polygon(50% 97%, 100% 0, 100% 32%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 0 0);
+            z-index: 1;
+            background-color: #fff;
+            height: 7vw;
+            position: absolute;
+            width: 100%;
+            bottom: 105px;
+            display: block;
+        }
                 .navbar{
                 display: flex;
                 flex-flow: row;
@@ -37,9 +48,8 @@
             
         }
         .about{
-            margin-left: 10%;
             flex-flow: row!important;
-            justify-content: space-between;
+            justify-content: space-around;
             width: 80%;
             article{
                

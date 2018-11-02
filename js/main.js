@@ -27,7 +27,13 @@ $(document).ready(function(){
         }
     });
 
-  
+    $('.logo-about').click(function(){
+        $(".slider-blade").addClass('plum')
+        $(".slider-blade").animate({
+          height: "2900vh"
+        }, 1500 ); 
+    })
+
       let NavY = $('.navbar').offset().top; 
       let stickyNav = function()
       {
