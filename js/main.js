@@ -1,6 +1,8 @@
 
 $(document).ready(function(){
     
+    let mottoWidth = $('h2').width();
+
     $('.slider').slick({
         dots: true,
         infinite: true, 
@@ -28,11 +30,21 @@ $(document).ready(function(){
     });
 
     $('.logo-about').click(function(){
-        $(".slider-blade").addClass('plum')
-        $(".slider-blade").animate({
-          height: "2900vh"
-        }, 1500 ); 
+        $('.slider-blade').addClass('curtainOn');
+        $('.logo-container').css('cursor', 'default');
+        $('.slider-blade-content').show();
+       
+        console.log(mottoWidth)
+        $('.motto').animate( { width: mottoWidth }, 3000 );
     })
+
+    $('.close').click(function(){
+        $('.slider-blade').removeClass('curtainOn');
+        $('.slider-blade').addClass('curtainoff');
+
+          })
+    
+   
 
       let NavY = $('.navbar').offset().top; 
       let stickyNav = function()
