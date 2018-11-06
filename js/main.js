@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
     
-    let mottoWidth = $('h2').width();
+
 
     $('.slider').slick({
         dots: true,
@@ -29,21 +29,25 @@ $(document).ready(function(){
         }
     });
 
+  
+        $('.close').click(function(){
+            $('.slider-blade').addClass('curtainOff')
+            setTimeout(function(){ 
+                $('.slider-blade').removeClass('curtainOff')
+                $('.slider-blade').removeClass('curtainOn')
+                $('.logo-container').css({'cursor': 'pointer'})
+                }, 1600);
+        })
+           
+        
+
     $('.logo-about').click(function(){
-        $('.slider-blade').addClass('curtainOn');
+        $('.slider-blade').addClass('curtainOn')
         $('.logo-container').css('cursor', 'default');
         $('.slider-blade-content').show();
-       
-        console.log(mottoWidth)
-        $('.motto').animate( { width: mottoWidth }, 3000 );
-    })
+           
+            })
 
-    $('.close').click(function(){
-        $('.slider-blade').removeClass('curtainOn');
-        $('.slider-blade').addClass('curtainoff');
-
-          })
-    
    
 
       let NavY = $('.navbar').offset().top; 

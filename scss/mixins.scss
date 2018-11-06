@@ -1,0 +1,27 @@
+
+$sans: 'Open Sans', sans-serif;
+$sans-pro: 'Source Sans Pro', sans-serif;
+
+$red: #e74c3c;
+$white: #fff;
+
+@mixin slide-btn($bg, $color){
+    height: 56px;
+    width: 225px;
+    background: $bg;
+    color: $color;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-family: $sans;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12px;
+    cursor: pointer;
+}
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

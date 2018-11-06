@@ -1,4 +1,5 @@
 @import 'reset';
+@import 'mixins';
 @import 'desktop';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:400,600,700');
 
@@ -13,21 +14,41 @@
 section{
   position: relative;
 }
-.slider-blade{
-  display: none;
-}
+
 
 .slider-footer{
   width: 100%;
  
 }
 
+.slider-blade{
+  -webkit-clip-path: polygon(50% 59%, 100% 0, 100% 32%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 0 0);
+  clip-path: polygon(50% 97%, 100% 0, 100% 32%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 0 0);
+  z-index: 1;
+  background-color: #fff;
+  height: 7vw;
+  position: absolute;
+  width: 100%;
+  bottom: 105px;
+  display: block;
+  cursor: default;
+
+  .slider-blade-content{
+      display: none;
+      height: 400px;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      bottom: 100px;
+      @include flex;
+      flex-flow: column;
+  }
+}
+
 .logo-container{
   margin: 0 auto;
   top: -70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex;
   height: 72px;
   width: 72px;
   border-radius: 100%;
@@ -47,8 +68,9 @@ section{
   }
 }
 
+
 .curtainOn{
-  animation: curtainOn 1.5s forwards;
+  animation: curtainOn 3s forwards;
   cursor: pointer;
 }
 
@@ -58,16 +80,19 @@ section{
 }
 
 .motto{
-  width: 0px; height: 70px; font-size: 22px; color: green; white-space: nowrap; overflow: hidden;
+ font-family: $sans;
+ font-size: 50px;
+ color: $white;
 }
 
 @keyframes curtainOn {
   0%   {background-color: rgba(255, 255, 255, 1); height: 7vw;}
-  100% {background-color: rgba(170, 135, 131, 1); height: 3700vw;}
+  100% {background-color: rgba(170, 135, 131, 1); height: 6000vw;}
 }
 
 @keyframes curtainOff {
-  0%    {background-color: rgba(170, 135, 131, 1); height: 3700vw;}
+  0%    {background-color: rgba(170, 135, 131, 1); height: 6000vw;}
+  70%    {background-color: rgba(170, 135, 131, 1);}
   100%  {background-color: rgba(255, 255, 255, 1); height: 7vw;}
 }
 
